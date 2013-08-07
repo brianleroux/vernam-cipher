@@ -1,0 +1,22 @@
+{
+  "name": "vernam-cipher",
+  "version": "0.1.0",
+  "description": "A toy Vernam Cipher implementation. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/brianleroux/vernam-cipher"
+  },
+  "keywords": [
+    "vernam",
+    "cipher"
+  ],
+  "author": "Brian LeRoux",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/brianleroux/vernam-cipher/issues"
+  }
+}
