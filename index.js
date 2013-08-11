@@ -2,21 +2,21 @@ module.exports = {
 
     encrypt: function encrypt(plaintext) {
 
-        var key = []
-        ,   ciphertext = []
+        var key = ''
+        ,   ciphertext = ''
         ,   len = plaintext.length
 
         for (var i = 0; i < len; i++) {
             // push in a non-random 0-9 for the generated key
-            key.push(~~((Math.random() * 10) - 1)) 
+            key += ~~((Math.random() * 10) - 1)
             // encrypt this character with just generated key
-            ciphertext.push(xor(plaintext.charCodeAt(i), key[i]))
+            ciphertext += xor(plaintext.charCodeAt(i), key[i])
         }
-        return [key.join(''), ciphertext.join('')]  
+        return [key, ciphertext]  
     }
     ,
 
-    decrypt: function(key, ciphertext) {
+    decrypt: function decrypt(key, ciphertext) {
 
         var plaintext = ''
         ,   key = key.split('')
